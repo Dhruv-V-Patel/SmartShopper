@@ -22,7 +22,7 @@ const scrapeFlipkart = async (query) => {
     const results = []
 
     $('div.gdgoEp > div.cPHDOP').each((i, el) => {
-      console.log("Hello World");
+      //console.log("Hello World");
       const linkTag = $(el).find('div.KzDlHZ' || 'a.wjcEIp')
       const title = linkTag.text()
       const price = $(el).find('.tUxRFH .col-5-12 ._4b5DiR').text()
@@ -34,10 +34,10 @@ const scrapeFlipkart = async (query) => {
       //const link = relativeLink?.startsWith('/') ? `https://www.flipkart.com${relativeLink}` : null
       const link = relativeLink ? `https://www.flipkart.com${relativeLink}` : null
 
-      console.log(link)
-       console.log('-------------------------')
-       console.log(price)
-       console.log(title)
+      // console.log(link)
+      //  console.log('-------------------------')
+      //  console.log(price)
+      //  console.log(title)
 
       if (title && price && link && realprice && img && off) {
         results.push({ title, price, link, realprice, img, off })

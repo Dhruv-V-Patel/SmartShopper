@@ -1,7 +1,8 @@
 const express = require('express')
 const router = express.Router()
 const scrapeAmazon = require('../scrapers/amazon')
-const scrapeFlipkart = require('../scrapers/newflipkart')  // Remove Comment to flipkart scraper is work
+const scrapeFlipkart = require('../scrapers/flipkart')  // Remove Comment to flipkart scraper is work
+//const scrapeFlipkart = require('../scrapers/newflipkart')  // Remove Comment to flipkart scraper is work
 //const scrapeRelianceDigital = require('../scrapers/relianceDigital')
 
 router.post('/', async (req, res) => {
