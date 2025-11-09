@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@sparticuz/chromium": "^141.0.0",
     "axios": "^1.10.0",
     "body-parser": "^2.2.0",
     "cheerio": "^1.1.0",
@@ -9,6 +10,7 @@
     "nodemon": "^3.1.10",
     "pdfkit": "^0.17.1",
     "puppeteer": "^24.19.0",
+    "puppeteer-core": "^24.29.1",
     "request": "^2.88.2",
     "request-promise": "^0.0.1"
   },
